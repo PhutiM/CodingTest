@@ -1,0 +1,55 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.circle {
+  background: url(https://d13yacurqjgara.cloudfront.net/users/212457/screenshots/2212523/yo.jpg) #000;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  opacity: 0.5;
+  transition: all .3s ease-in-out;
+}
+
+.circle:hover {
+  border-radius:0;  
+  cursor: pointer;
+}
+
+.text {
+  color: #fff;
+  opacity: 0;
+  text-align: center;
+  padding-top: 0px;
+  transition: all .3s ease-in-out;
+}
+
+.circle:hover .text {
+  padding-top: 40px;
+  opacity: 1;
+}	
+
+.image { 
+    position: absolute;
+
+  z-index: 0;
+}
+
+
+
+.image-thumb { 
+  left: 0px;
+  position: sticky;
+ z-index: 0;
+}

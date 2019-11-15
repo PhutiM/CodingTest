@@ -1,0 +1,136 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.circle {
+  background: url(https://d13yacurqjgara.cloudfront.net/users/212457/screenshots/2212523/yo.jpg) #000;
+  border-radius: 50%;
+  height: 500px;
+  margin: 0 auto;
+  width: 500px;
+  opacity: 0.5;
+  transition: all .3s ease-in-out;
+  position:relative;
+}
+
+.circle:hover {
+  border-radius:0;  
+  cursor: pointer;
+  border-radius: 50%;
+  height: 500px;
+  margin: 0 auto;
+  width: 500px;
+  opacity: 0.5;
+  transition: all .3s ease-in-out;
+}
+
+.text {
+  color: #fff;
+  opacity: 0;
+  text-align: center;
+  padding-top: 0px;
+  transition: all .3s ease-in-out;
+  
+}
+
+.main-text{
+    position:absolute;
+    top:25%
+}
+.circle:hover .text {
+  padding-top: 40px;
+  opacity: 1;
+}	
+
+.image { 
+    position: absolute;
+
+  z-index: 0;
+}
+
+
+
+.image-thumb { 
+  left: 0px;
+  position: sticky;
+ z-index: 0;
+}
+
+
+.circle__box {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.circle__wrapper {
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.circle__wrapper--right {
+  right: 0;
+}
+
+.circle__wrapper--left {
+  left: 0;
+}
+
+.circle__whole {
+  width: 160px;
+  height: 160px;
+  border: 20px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.circle__right {
+  border-top: 20px solid teal;
+  border-right: 20px solid teal;
+  right: 0;
+  animation: circleRight 5s linear forwards;
+}
+
+.circle__left {
+  border-bottom: 20px solid teal;
+  border-left: 20px solid teal;
+  left: 0;
+  animation: circleLeft 5s linear forwards;
+}
+
+@keyframes circleRight {
+  0% {
+    transform: rotate(-135deg);
+  }
+  50%,
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes circleLeft {
+  0%,
+  50% {
+    transform: rotate(-135deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
